@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Droid+Serif);
+
+// Sass Variables
+
+// Color Variables
+$background-color: #333D7B;
+$primary-color: #FFD350;
+$secondary-color: #F25551;
+$third-color: #999;
+$accent-color: #e5e5e5;
+$white: #FFF;
+
+// Fonts
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Droid Serif', serif;
+
+body {
+  font-family: $secondary-font;
+}
+
+.container, .jumbotron .container {
+}
+
+.jumbotron {
+  background-color: $background-color;
+  margin-bottom: 1.5em;
+  font-family: $primary-font;
+  color: $white;
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px 1px #333;
+}
+
+article:first-of-type {
+    border-top: 0 solid $accent-color;
+}
+article:last-of-type {
+    border-bottom: 0 solid $accent-color;
+}
+article {
+    border-bottom: 1px solid $accent-color;
+    border-top: 1px solid $accent-color;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 16px;
+}
+
+a {
+  color: $third-color;
+}
+
+.h1, h1,
+.jumbotron .h1, .jumbotron h1 {
+  font-family: $secondary-font;
+        color: $primary-color;
+}
+
+.h2, h2 {
+    font-size: 30px;
+    font-family: $primary-font;
+    margin-top: 0;
+    color: $secondary-color;
+}
+
+h2 a {
+      color: $secondary-color;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.navbar-default, .navbar-collapse {
+    /*background-color: $primary-color;*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+    background-image: none;
+    /*background-color: $third-color;*/
+  color: $white;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-image: none;
+  background-color: $secondary-color;
+    background-repeat: repeat-x;
+    border-color: $secondary-color;
+    text-shadow: 0 -1px 0 #286090;
+}
+
+.btn-default {
+  background-color: $secondary-color;
+  background-image: none;
+  color: $white;
+  text-shadow: none;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: $primary-color;
+    color: $background-color;
+}
+
+.btn-primary:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $background-color;
+}
+
+.well {
+    background-color: $primary-color;
+    background-image: none;
+    color: $secondary-color;
+}
+
+.well a {
+    color: #333D7B;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: $secondary-color;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+body {
+  padding-top: 70px;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 20px;
+}
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .row-offcanvas-left
+  #sidebarLeft {
+    left: -40%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 40%;
+  }
+ 
+  .row-offcanvas-right 
+  #sidebarRight {
+    right: -40%;
+  }
+
+  .row-offcanvas-right.active {
+    right: 40%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin-left: 10px;
+  }
+  
+  .section {
+    margin-bottom: 1.5em;
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato|Droid+Serif);
+
+// Sass Variables
+
+// Color Variables
+$background-color: #333D7B;
+$primary-color: #FFD350;
+$secondary-color: #F25551;
+$third-color: #999;
+$accent-color: #e5e5e5;
+$white: #FFF;
+
+// Fonts
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Droid Serif', serif;
+
+body {
+  font-family: $secondary-font;
+}
+
+.container, .jumbotron .container {
+}
+
+.jumbotron {
+  background-color: $background-color;
+  margin-bottom: 1.5em;
+  font-family: $primary-font;
+  color: $white;
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px 1px #333;
+}
+
+article:first-of-type {
+    border-top: 0 solid $accent-color;
+}
+article:last-of-type {
+    border-bottom: 0 solid $accent-color;
+}
+article {
+    border-bottom: 1px solid $accent-color;
+    border-top: 1px solid $accent-color;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 16px;
+}
+
+a {
+  color: $third-color;
+}
+
+.h1, h1,
+.jumbotron .h1, .jumbotron h1 {
+  font-family: $secondary-font;
+        color: $primary-color;
+}
+
+.h2, h2 {
+    font-size: 30px;
+    font-family: $primary-font;
+    margin-top: 0;
+    color: $secondary-color;
+}
+
+h2 a {
+      color: $secondary-color;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.navbar-default, .navbar-collapse {
+    /*background-color: $primary-color;*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+    background-image: none;
+    /*background-color: $third-color;*/
+  color: $white;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-image: none;
+  background-color: $secondary-color;
+    background-repeat: repeat-x;
+    border-color: $secondary-color;
+    text-shadow: 0 -1px 0 #286090;
+}
+
+.btn-default {
+  background-color: $secondary-color;
+  background-image: none;
+  color: $white;
+  text-shadow: none;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: $primary-color;
+    color: $background-color;
+}
+
+.btn-primary:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $background-color;
+}
+
+.well {
+    background-color: $primary-color;
+    background-image: none;
+    color: $secondary-color;
+}
+
+.well a {
+    color: #333D7B;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: $secondary-color;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+body {
+  padding-top: 70px;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 20px;
+}
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .row-offcanvas-left
+  #sidebarLeft {
+    left: -40%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 40%;
+  }
+ 
+  .row-offcanvas-right 
+  #sidebarRight {
+    right: -40%;
+  }
+
+  .row-offcanvas-right.active {
+    right: 40%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin-left: 10px;
+  }
+  
+  .section {
+    margin-bottom: 1.5em;
+  }
+}
+

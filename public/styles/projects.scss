@@ -1,0 +1,105 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #14171a;
+}
+
+.page-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.page-head h1 {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.items {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 5000px;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+.items li {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+  width: 200px;
+  height: 120px;
+  background-color: black;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.items li .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+}
+.items li:hover {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  width: 400px;
+  height: 250px;
+}
+.items li:hover a .content {
+  -webkit-transform: translateY(0) translateX(-50%);
+      -ms-transform: translateY(0) translateX(-50%);
+          transform: translateY(0) translateX(-50%);
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+  opacity: 1;
+}
+.items li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.items li a .content {
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateY(100%) translateX(-50%);
+      -ms-transform: translateY(100%) translateX(-50%);
+          transform: translateY(100%) translateX(-50%);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 0;
+  padding: 40px 10px 10px 10px;
+  width: 400px;
+}
+.items li a .content h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 30px;
+}
